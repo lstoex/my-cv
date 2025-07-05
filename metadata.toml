@@ -49,7 +49,7 @@ language = "en"
 
 [personal]
     first_name = "Daniel"
-    last_name = "San Jose Pro"
+    last_name = "San José Pro"
 
     # The order of this section will affect how the entries are displayed
     # The custom value is for any additional information you want to add, name it as custom-1, custom-2, etc.

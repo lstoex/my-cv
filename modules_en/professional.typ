@@ -16,7 +16,7 @@
   description: list(
     [Design of force-based teleoperation systems for Franka Robotics FR3 manipulators.],
     [Software Design ROS2 controllers and packages for learning-based policies on real hardware.],
-    [3D Printing and design of grippers and teleoperation tools.],
+    [3D printing and design of grippers and teleoperation tools.],
   ),
   tags: ("ROS2", "C++", "Python", "Teleoperation", "3D-Printing", "Learning Based Control", "Franka Robotics FR3"),
 )
@@ -40,14 +40,14 @@
   logo: image("../src/logos/angsa.jpg"),
   date: [Apr 2021 - Dec 2023],
   location: [Munich, Germany],
-  description: list(
-    [Development of the robot software stack based on ROS2 using Python, C++, and C for micro-ROS.],
+  description: "Angsa develops an autonomous trash picking robot for green spaces."+list(
+    [Development of the robot software stack for a wheeled robot based on *ROS2 using Python, C++, and C for micro-ROS.*],
     [Deployment and testing of the robot in simulation and real environment.],
     [Bachelor thesis in optimal coverage path planning for outdoor navigation.],
-    [Implementation of an intelligent object-picking process for an autonomous trash-collecting robot on ROS2 (python and C++).],
+    [Implementation of an intelligent object-picking process for an autonomous trash-collecting robot.],
     [Setup of the CAN network for the driving system of the robot.]
   ),
-  tags: ("ROS2", "C++", "Python", "Navigation"),
+  tags: ("ROS2", "C++", "Python", "Navigation", "Behavior Trees")
 )
 
 // #cvEntry(
