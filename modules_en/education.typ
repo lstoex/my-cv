@@ -13,10 +13,7 @@
   date: [2018 - 2020],
   location: [Munich, Germany],
   logo: image("../src/logos/tum.png"),
-  description: list(
-    [Grade: 1.0],
-    [Focus in Robotics, Control Theory, and Machine Learning.]
-  ),
+  description: "Average grade: 1.1. Focus in Robotics, Control Theory, and Machine Learning."
 )
 
 #cvEntry(
@@ -25,9 +22,7 @@
   date: [2021],
   location: [Zürich, Switzerland],
   logo: image("../src/logos/eth.png"),
-  description: list(
-    [Auslandssemester: Theory of Robotics and Mechatronics, Dynamic Programming and Optimal Control, High Performance Computing in Science and Engineering, Introduction to Aircraft and Car Aerodynamics and Discrete and Statistical Signal Processing.]
-  ),
+  description: "Courses in Theory of Robotics and Mechatronics, Dynamic Programming and Optimal Control, High Performance Computing in Science and Engineering, Introduction to Aircraft and Car Aerodynamics and Discrete and Statistical Signal Processing."
 )
 
 #cvEntry(
@@ -36,7 +31,5 @@
   date: [2023],
   location: [Stockholm, Sweden],
   logo: image("../src/logos/kth.png"),
-  description: list(
-    [Erasmus exchange semester with focus on Control and Machine Learning. Courses in Model Predictive Control, Deep Learning, Applied Estimation and Reinforcement Learning. Average Grade: A.]
-  ),
+  description: "Average Grade: A. Courses in Model Predictive Control, Deep Learning, Applied Estimation and Reinforcement Learning."
 )
