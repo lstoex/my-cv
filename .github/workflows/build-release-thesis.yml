@@ -51,7 +51,7 @@ jobs:
           DEFAULT_BUMP: 'patch'
 
       - uses: typst-community/setup-typst@v4
-      - run: typst compile cv_de.typ; typst compile cv_en.typ
+      - run: typst compile cv_de.typ; typst compile cv.typ
 
       - name: Create Release
         id: create_release
@@ -63,4 +63,4 @@ jobs:
           prerelease: false
           files: |
             cv_de.pdf
-            cv_en.pdf
+            cv.pdf
