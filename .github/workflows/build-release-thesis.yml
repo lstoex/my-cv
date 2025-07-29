@@ -25,17 +25,27 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.local/share/fonts
-          key: newcomputermodern-fonts-${{ runner.os }}
+          key: fonts-${{ runner.os }}-v2
           restore-keys: |
-            newcomputermodern-fonts-
+            fonts-${{ runner.os }}-
 
       - name: Install Fonts (if not cached)
         if: steps.cache-fonts.outputs.cache-hit != 'true'
-        run: | #Extend this to all the fonts you need
+        run: |
           mkdir -p ~/.local/share/fonts
+
+          # Install New Computer Modern fonts
           wget -O /tmp/newcomputermodern.zip "https://fontesk.com/download/39191"
           unzip /tmp/newcomputermodern.zip -d /tmp/
           cp -r /tmp/*.otf ~/.local/share/fonts/
+
+          # Install Font Awesome
+          echo "Installing Font Awesome..."
+          FA_VERSION="6.5.1"
+          wget -O /tmp/fontawesome.zip "https://use.fontawesome.com/releases/v${FA_VERSION}/fontawesome-free-${FA_VERSION}-desktop.zip"
+          unzip /tmp/fontawesome.zip -d /tmp/
+          find "/tmp/fontawesome-free-${FA_VERSION}-desktop/" -name "*.otf" -o -name "*.ttf" | xargs -I {} cp {} ~/.local/share/fonts/
+
           fc-cache -f -v  # Refresh font cache
 
       - name: Create initial tag
